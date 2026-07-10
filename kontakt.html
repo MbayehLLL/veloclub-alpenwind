@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt — Veloclub Alpenwind</title>
+    
+    <!-- Google Fonts -->
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap)" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css)" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css)" rel="stylesheet">
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="logo" href="index.html">Veloclub Alpenwind</a>
+                <ul class="nav-menu">
+                    <li><a href="touren.html">Touren</a></li>
+                    <li><a href="ueber-uns.html">Team</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Hast du Fragen oder möchtest Mitglied werden? Schreib uns!</p>
+            </div>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Kontakt Info -->
+                    <div class="contact-info">
+                        <h2>So erreichst du uns</h2>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Adresse</h4>
+                                <p>Veloclub Alpenwind<br>Bergstrasse 42<br>8000 Zürich</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>E-Mail</h4>
+                                <p>info@veloclub-alpenwind.ch</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Trainingszeiten</h4>
+                                <p>Samstag: 9:00 – 12:00 Uhr<br>Mittwoch: 18:00 – 20:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontakt Formular -->
+                    <div class="contact-form-wrapper">
+                        <h2>Mitgliedschaftsanfrage</h2>
+                        <form id="contact-form" class="contact-form">
+                            
+                            <!-- Vorname & Nachname -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vorname">Vorname *</label>
+                                    <input type="text" id="vorname" name="vorname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nachname">Nachname *</label>
+                                    <input type="text" id="nachname" name="nachname" required>
+                                </div>
+                            </div>
+
+                            <!-- E-Mail -->
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <!-- Geburtsjahr -->
+                            <div class="form-group">
+                                <label for="geburtsjahr">Geburtsjahr *</label>
+                                <input type="number" id="geburtsjahr" name="geburtsjahr" min="1940" max="2020" placeholder="z.B. 1990" required>
+                            </div>
+
+                            <!-- Trainingsangebot -->
+                            <div class="form-group">
+                                <label for="training">Trainingsangebot *</label>
+                                <select id="training" name="training" required>
+                                    <option value="">Bitte wählen...</option>
+                                    <option value="anfaenger">Anfänger-Training</option>
+                                    <option value="fortgeschritten">Fortgeschrittene</option>
+                                    <option value="bergtouren">Bergtouren</option>
+                                    <option value="familien">Familien-Touren</option>
+                                </select>
+                            </div>
+
+                            <!-- Mitgliedschaftstyp -->
+                            <div class="form-group">
+                                <label>Mitgliedschaftstyp *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="mitgliedschaft" value="einzel" required>
+                                        <span>Einzel (CHF 80/Jahr)</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="mitgliedschaft" value="familie">
+                                        <span>Familie (CHF 120/Jahr)</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="mitgliedschaft" value="junior">
+                                        <span>Junior (CHF 40/Jahr)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Bemerkungen -->
+                            <div class="form-group">
+                                <label for="bemerkungen">Bemerkungen</label>
+                                <textarea id="bemerkungen" name="bemerkungen" rows="4" placeholder="Hast du Fragen oder möchtest uns etwas mitteilen?"></textarea>
+                            </div>
+
+                            <!-- Datenschutz -->
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                                    <span>Ich akzeptiere die <a href="impressum.html">Datenschutzerklärung</a> *</span>
+                                </label>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="submit-button">
+                                <i class="bi bi-send"></i> Anfrage senden
+                            </button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Veloclub Alpenwind. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js)"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
