@@ -8,15 +8,6 @@ Offizieller Webauftritt des Veloclub Alpenwind.
 - Bootstrap 5
 - Google Fonts (Montserrat, Open Sans)
 
-## Lokale Entwicklung
-
-1. Repository klonen
-2. `index.html` im Browser öffnen oder Live Server verwenden
-
-## Deployment
-
-GitHub Pages: Settings → Pages → Branch: main
-
 ## Autor
 
-[Dein Name] — Modul 293
+Majd Elias — Modul 293
